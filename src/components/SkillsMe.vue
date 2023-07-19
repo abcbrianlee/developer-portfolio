@@ -110,7 +110,6 @@ width: 70%;
 }
 .logos2 {
     overflow:hidden;
-    
     white-space: nowrap;
 }
 .logos:hover .logos-slide {

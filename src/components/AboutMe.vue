@@ -1,4 +1,5 @@
 <template>
+    <div id="page-three-nav">
     <section class="about-me-section">
         <div class="about-Me">
             <h1 class="about-me-h1">About</h1>
@@ -16,6 +17,7 @@
                 </div>
         </div>
     </section>
+    </div>
    
     
 </template>
@@ -54,8 +56,8 @@ export default {
 .about-me-image{
     flex-basis: 50%;
     display:flex;
-    justify-content: flex-end;
-    margin-right: 150px;
+   
+   
     
 }
 .about-me-image img{

@@ -3,7 +3,7 @@
     <div class="navbar">
         <a href="https://github.com/abcbrianlee"><img src="../assets/github.png" alt="Github"></a>
         <a href="https://linkedin.com/in/abcbrianlee"><img src="../assets/linkedin.png" alt="LinkedIn"></a>
-        <a href=""><img src="../assets/resume.png" alt="Resume"></a>
+        <a href="https://drive.google.com/file/d/15X89t69psUgVlA7XvroYCXVOXDsc7XqE/view?usp=sharing"><img src="../assets/resume.png" alt="Resume"></a>
     </div>
     
     <div class="main-container">
@@ -11,16 +11,13 @@
         <h1>I'm a full stack developer.</h1>
             <div class="main-box">
                 <div class="section-box">
-                    <h2>Skills</h2>
+                    <a href="#container-one"><h2>Skills</h2></a>
                 </div>
                 <div class="section-box">
-                    <h2>Projects</h2>
+                    <a href="#page-two-nav"><h2>Projects</h2></a>
                 </div>
                 <div class="section-box">
-                    <h2>About</h2>
-                </div>
-                <div class="section-box">
-                    <h2>Contact</h2>
+                    <a href="#page-three-nav"><h2>Contact</h2></a>
                 </div>
             </div>
     </div>
@@ -100,7 +97,12 @@ export default {
     justify-content: flex-end;
     gap: 3em;
     padding-right: 150px;
-
+}
+.navbar img{
+    transition: transform 0.3s ease;
+}
+.navbar img:hover {
+    transform: scale(1.1) translateY(-5px);
 }
 @media (max-width: 768px) {
   .navbar {
@@ -126,6 +128,10 @@ h1{
     font-weight: 700;
     margin-bottom: .2rem;
     text-align: left;
+    color:black;
+}
+p{
+    color:black;
 }
 h2{
     font-size:1.5rem;
@@ -146,10 +152,21 @@ h2{
     margin-bottom: 50px;
     text-align: center;
     color: #4CD6AF;
-
+    text-decoration: none;
+    transition: transform 0.3s ease;
 
 }
+.section-box:hover {
+    transform: scale(1.1) translateY(-5px);
+}
+.section-box a {
+  color: inherit; /* Inherit the parent element's text color */
+  text-decoration: none; /* Remove the default underline */
+}
 
+.section-box a:hover {
+  color: inherit; /* Inherit the parent element's text color for hover */
+}
 
 
 

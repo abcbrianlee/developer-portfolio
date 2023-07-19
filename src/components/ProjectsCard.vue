@@ -1,5 +1,7 @@
 <template>
+<div id="page-two-nav">
 <div class="container-two">
+
     <div class="project-header">Projects</div>
     <div class="project-container">
         <div v-for="(project, index) in projectData.ProjectsArray" v-bind:key="index" class="project-wrapper">
@@ -24,13 +26,11 @@
             </div>
 
             <div class="project-image">
-                <img :src= "projectData.ProjectsArray[index].Image" alt="pic">
-            <!--<img :src="projectData.ProjectsArray[index].Image" alt="Project Image"> -->
-                <!--<img src="../assets/fragrance.png" alt="LinkedIn">-->
-                
+                <img :src= "projectData.ProjectsArray[index].Image" alt="pic">        
             </div>
         </div>
     </div>
+</div>
 </div>
 </template>
 
@@ -88,15 +88,17 @@ p{
 }
 .project-image {
     flex-basis: 50%;
-
 }
+
 .project-image img {
     width: 100%;
   height: auto;
   max-width: 100%;
   max-height: 100%;
   border: 2px solid black;
+
 }
+
 .project-box{
     display:flex;
     flex-wrap:wrap;
@@ -113,6 +115,21 @@ p{
     text-align: center;
     color: #4CD6AF;
     font-size: 12px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
     
+}
+
+.project-section-box:hover {
+    transform: scale(1.1) translateY(-5px);
+}
+
+.project-section-box a {
+  color: inherit;
+  text-decoration: none; 
+}
+
+.project-section-box a:hover {
+  color: inherit;
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <MainCard />
   <ProjectsCard />
-  <AboutMe />
+
   <ContactMe />
 </template>
 
@@ -9,7 +9,7 @@
 
 import MainCard from './components/MainCard.vue'
 import ProjectsCard from './components/ProjectsCard.vue'
-import AboutMe from './components/AboutMe.vue'
+
 import ContactMe from './components/ContactMe.vue'
 
 export default {
@@ -17,7 +17,7 @@ export default {
   components: {
     MainCard,
     ProjectsCard,
-    AboutMe,
+
     ContactMe
   }
 }
