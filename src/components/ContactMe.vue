@@ -9,8 +9,7 @@
                                         <img src="../assets/profile.png" alt="About Me Photo">
                                 </div>
                             <p>As a former chiropractor turned software developer, I've embarked on a transformative journey that blends my background in holistic healthcare with my newfound passion for software development. Leveraging my expertise in problem-solving and attention to detail, I strive to create meaningful and user-centric solutions that bridge the gap between technology and well-being.
-
-                            Currently, my primary focus is on developing applications with a strong emphasis on Java, Python, and C++. I typically use Javascript, HTML/CSS/Bootstrap and Flask to facilitate communication with the client side.
+                                When I'm not working, you can often find me out and about, exploring all that DFW has to offer. I have a passion for watchin Titans and SEC football, cooking and trying out new and exciting foods, and spending quality time with my girlfriend and two dogs. Life is all about balancing work and play, and I love indulging in my hobbies during my downtime!
                             </p>
                         </div>
 
@@ -81,7 +80,7 @@ p{
         color:white;
 }
 .container-four {
-    height:70vh;
+    height:80vh;
     background-color: #3e3e3e;
     display: flex;
     justify-content: center;
@@ -101,6 +100,7 @@ p{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-right: 50px;
 }
 .about-me-image {
         display: flex;
@@ -108,6 +108,8 @@ p{
 .about-me-image img{
     height: 250px;
     border-radius: 50%;
+    
+    
 }
 .contact-me {
         display: flex;
@@ -121,7 +123,7 @@ p{
 input[type="text"],
 input[type="email"],
 textarea {
-  width: 600px;
+  width: 500px;
   height: 25px;
   padding: 5px;
 }
@@ -145,6 +147,34 @@ button[type="submit"] {
   font-size: 1rem;
   font-weight: 900;
   margin-top:1rem;
+}
+
+@media screen and (max-width: 1250px) {
+        h1{
+    font-size: 2rem;
+    font-weight: 700;
+   
+    }
+        .container-four-wrapper {
+                flex-direction: column;
+        }
+        .container-four {
+                height: 175vh;
+        }
+}
+
+@media screen and (max-width: 900px) {
+        h1{
+    font-size: 2rem;
+    font-weight: 700;
+   
+    }
+        .container-four-wrapper {
+                flex-direction: column;
+        }
+        .container-four {
+                height: 200vh;
+        }
 }
 
 </style>

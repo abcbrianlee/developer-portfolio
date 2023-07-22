@@ -31,9 +31,9 @@
 
         },
         {
-            "Id" :2,
+            "Id" :4,
             "Title": "Parcel Delivery Service",
-            "About": "The Parcel Delivery Service creates optimal route planning and minimizes delivery time and fuel costs by implementing the greedy algorithm.  It incorporates a hash table data structure to store and access package information, making it efficient to facilitate quick and accurate package lookup based on user's input and allows users to locate individual packages at a specific time, enabling users to track the package's status. ",
+            "About": "The Parcel Delivery Service creates route planning and minimizes delivery time and fuel costs by implementing the greedy algorithm.  It incorporates a hash table data structure to store and access package information, making it efficient to facilitate quick and accurate package lookup based on user's input and allows users to locate individual packages at a specific time.",
             "Tools": ["Python"],
             "Link": null,
             "Link2": "https://github.com/abcbrianlee/Parcel-Delivery-Service",

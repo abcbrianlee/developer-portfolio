@@ -53,6 +53,7 @@ export default {
 <style>
 .container-two {
     background-color: #4CD6AF;
+  
 }
 .project-header{
     font-size: 5.6rem;
@@ -64,6 +65,8 @@ export default {
 .project-container{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    
 
 }
 .project-wrapper{
@@ -73,8 +76,9 @@ export default {
     
 }
 h2{
-    font-size: 48px;
+    font-size: 36px;
     font-weight: 500;
+    
 }
 p{
     font-size:18px;
@@ -91,11 +95,13 @@ p{
 }
 
 .project-image img {
-    width: 100%;
+  width: 100%;
   height: auto;
   max-width: 100%;
   max-height: 100%;
   border: 2px solid black;
+  margin-top: 60px;
+  min-width: 300px;
 
 }
 
@@ -132,4 +138,29 @@ p{
 .project-section-box a:hover {
   color: inherit;
 }
+
+
+
+@media screen and (max-width: 600px)
+{
+    h1{
+    font-size: 2rem;
+    font-weight: 700;
+   
+    }
+    .project-wrapper{
+        flex-direction: column;
+    }
+
+    .project-image img {
+        min-width: 100%; /* Ensure the image takes full width on mobile */
+        margin-top: 20px; /* Adjust the margin as needed for better spacing */
+        margin-left: 20px;
+        
+    }
+    
+
+
+}
+
 </style>

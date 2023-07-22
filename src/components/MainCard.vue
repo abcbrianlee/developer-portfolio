@@ -191,21 +191,15 @@ h2{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 70%;
 }
-.infinite-box {
-
-    box-sizing: border-box;
-    
-    width: 70%;
-
-}
+.infinite-box,
 .infinite-box2 {
-
-box-sizing: border-box;
-
-width: 70%;
-
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 70%;
 }
+
 .logos {
     overflow:hidden;
     padding:10px 0;
@@ -262,6 +256,35 @@ width: 70%;
 }
 
 
+@media screen and (max-width: 600px)
+{
+    h1{
+    font-size: 2rem;
+    font-weight: 700;
+   
+}
+.logos-slide img {
+    height: 30px;
+    margin: 0 20px;
+}
+
+  .logos:before,
+  .logos:after,
+  .logos2:before,
+  .logos2:after {
+    width: 50px; 
+  }
+
+.logos-slide img{
+    height: 20px;
+    margin: 0 40px;
+}
+}
+@media screen and (min-width: 601px) and (max-width: 1250px) {
+    .container-one {
+        height: 150vh;
+    }
+}
 
 
 
